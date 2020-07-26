@@ -2,12 +2,219 @@
 <html>
 
 <head>
-    <!-- TODO: Include Font Awesome file here -->
-    <!-- TODO: Include Google Fonts file here -->
+	<!-- TODO: Include Font Awesome file here -->
+	<!-- TODO: Include Google Fonts file here -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+		crossorigin="anonymous"></script>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+	<link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./styles/index.css">
+	<link rel="stylesheet" href="./styles/common.css">
+
+
 </head>
 
 <body>
-    <!-- TODO: Include all your code for the header and home page here -->
+
+	<!-- TODO: Include all your code for the header and home page here -->
+	<!-- Common Header to be included in all the html pages-->
+	<header>
+		<div>
+			<h1>ScriBBler</h1>
+
+			<div style="float:right" class="container">
+
+				<div class="text-right">
+					<button type="button" class='btn btn-primary pull-right mt-2' data-toggle="modal"
+						data-target="#signUpWindow">Sign Up</button>
+
+					<button type="button" class="btn btn-primary pull-right mt-2" data-toggle="modal"
+						data-target="#signInWindow">Sign In</button>
+				</div>
+			</div>
+		</div>
+		<h4>Explore, Imagine, Create</h4>
+
+		<!-- Sign Up Modal -->
+
+		<div class="container">
+
+
+			<div class="modal fade" id="signUpWindow">
+				<div class="modal-dialog modal-dialog-centered">
+					<div class="modal-content">
+						<!-- header -->
+						<div class="modal-header">
+							<h4 class="modal-title w-100 font-weight-bold">Get Started</h4>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+
+
+						</div>
+						<!-- body -->
+
+						<div class="modal-header">
+							<form role="form" class="needs-validation">
+
+
+								<div class="form-group">
+									<label for="name" class="label-text">Name</label>
+									<input type="text" class="form-control" id="name" placeholder="Enter your name"
+										required />
+								</div>
+
+								<div class="form-group">
+									<label for="username" class="label-text">Username</label>
+									<input type="text" class="form-control" placeholder="Enter your username"
+										required />
+								</div>
+
+								<div class="form-group">
+									<label for="password" class="label-text">Password</label>
+									<input type="password" class="form-control" placeholder="Enter your password"
+										required>
+								</div>
+
+								<div class="form-group">
+									<label for="conpassword" class="label-text">Confirm Password</label>
+									<input type="password" class="form-control" placeholder="Re-enter your password"
+										required />
+								</div>
+
+							</form>
+						</div>
+						<!-- footer -->
+						<div class="modal-footer">
+							<button type="submit" class="btn btn-success btn-block"
+								onclick="document.getElementById('signUpWindow').style.display='block'">Sign Up</button>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<!-- Sign In Modal -->
+		<div class="container">
+			<div class="modal fade" id="signInWindow">
+				<div class="modal-dialog modal-dialog-centered">
+					<div class="modal-content">
+						<!-- header -->
+						<div class="modal-header">
+							<h4 class="modal-title w-100 font-weight-bold">Welcome Back!</h4>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+
+						</div>
+						<!-- body -->
+
+						<div class="modal-header">
+							<form role="form" class="needs-validation">
+
+								<div class="form-group">
+									<label for="username" class="label-text">Username</label>
+									<input type="text" class="form-control" placeholder="Enter your username"
+										required />
+								</div>
+
+								<div class="form-group">
+									<label for="password" class="label-text">Password</label>
+									<input type="password" class="form-control" placeholder="Enter your password"
+										required>
+								</div>
+
+							</form>
+						</div>
+						<!-- footer -->
+						<div class="modal-footer">
+							<button type="submit" class="btn btn-success btn-block"
+								onclick="document.getElementById('signInWindow').style.display='block'">
+								Sign In</button>
+						</div>
+
+						<div class="container text-center" style="background-color:#f1f1f1">
+							<span class="psw"><b>Not a member? <b><a href="#" data-dismiss="modal"  data-toggle="modal" data-target="#signUpWindow" >Sign Up</a></span>
+						</div>
+						</form>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		</div>
+
+	</header>
+
+	<!-- All Posts and Create Post-->
+
+	<button type="button" id="allPostsBtn" onclick="window.location.href='./html/postslist.html';">All Posts</button>
+	<button type="button" id="createPostsBtn" data-toggle="modal" data-target="#createPostWindow">Create Post</button>
+
+	<!-- Create Post Modal -->
+	<div class="container">
+
+
+		<div class="modal fade" id="createPostWindow">
+			<div class="modal-dialog modal-dialog-centered modal-lg">
+				<div class="modal-content">
+					<!-- header -->
+					<div class="modal-header">
+						<h4 class="modal-title w-100 font-weight-bold">Pen Your Post</h4>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+
+
+					</div>
+					<!-- body -->
+
+					<div class="modal-header">
+						<form role="form" class="needs-validation">
+
+
+							<div class="form-group">
+								<label for="title" class="label-text">Title</label>
+								<input type="text" class="form-control input-large"
+									placeholder="Enter title of your post" required />
+							</div>
+
+							<div class="form-group">
+								<label for="textarea" class="label-text">Contents</label>
+								<textarea class="form-control col-xs-12 input-large"
+									placeholder="Enter the content of your post" required></textarea>
+								</textarea>
+
+							</div>
+
+
+						</form>
+					</div>
+					<!-- footer -->
+					<div class="modal-footer text-center">
+						<button type="submit" class="btn btn-success">
+							Create</button>
+					</div>
+
+
+					</form>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	</div>
+
 </body>
 
 </html>
