@@ -40,9 +40,6 @@ localStorage.setItem("cardBody",cardBody);
 
 location.href = "./post.html";
 
-window.alert(localStorage.getItem('titleVal'));
-window.alert(localStorage.getItem('author'));
-window.alert(localStorage.getItem('cardBody'));
 
 }
 

@@ -1,0 +1,45 @@
+body {
+    background-color: white;
+    }
+
+h5{
+        text-align: center;
+    }
+
+
+.fa .fa-pencil-square-o {
+        color: red;
+        text-align: right;
+
+      }
+
+.editButton{
+color:white;
+          background-color: rgb(255, 0, 85);
+          border: white;
+          float: right;
+          margin-right: 0.3%;
+      }
+
+.likeButton, .commentButton{
+color:white;
+        background-color: rgb(255, 0, 85);
+                  border: white;
+                  float: left;
+                  margin-left: 0.3%;
+              }
+
+.saveButton{
+color:white;
+          background-color: rgb(255, 0, 85);
+          border: white;
+          float: right;
+          margin-right: 0.3%;
+          padding-left: 10;
+      }  
+      
+
+
+.author{
+    padding-top: 50px;
+}
