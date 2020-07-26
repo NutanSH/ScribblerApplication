@@ -1,0 +1,36 @@
+
+body {
+  background-image: url("../images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+
+  
+  
+#allPostsBtn{
+background-color: yellow;
+color: black;
+align-items: center;
+justify-content: center;
+border: 3px white;
+position: absolute;
+top: 50%;
+left: 48%;
+transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+padding: 10px 24px;
+}
+
+#createPostsBtn{
+  background-color: yellow;
+  color: black;
+  align-items: center;
+  justify-content: center;
+  border: 3px white;
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  padding: 10px 24px;
+  }

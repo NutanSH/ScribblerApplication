@@ -1,0 +1,27 @@
+h1{
+    font-family: 'Montez', cursive; 
+    color: blue;
+    display: inline-block;
+  }
+  
+h4{
+    font-family: 'Ubuntu Mono', monospace;
+  }
+
+  input.btn btn-primary {
+    position: absolute;
+    right: 0;
+}
+
+  #popUpWindow{
+width: 100%;
+  }
+
+  /* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 135%;
+  margin: 4px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
