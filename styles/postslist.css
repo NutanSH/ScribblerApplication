@@ -1,0 +1,43 @@
+
+body {
+    background-color : #ffeedd;
+    }
+
+h8{
+color:grey;
+    }
+
+.card-text {
+        display: block;/* or inline-block */
+        text-overflow: ellipsis;
+        word-wrap: break-word;
+        overflow: hidden;
+        max-height: 5.5em;
+        line-height: 1.8em;
+      }    
+
+#deleteBtn{
+    float: left;
+    width: 25%;
+    margin-left: 5;
+   
+	margin: 10px 40px 40px 70px;
+}
+
+#cancelBtn{
+    float: right;
+    width: 25%;
+    margin-right: 5;
+    
+    margin: 10px 70px 40px 60px;
+} 
+
+#confirmationText{
+text-align:center;
+font-size: 17px;
+margin: 10px 0 10px 0;
+}
+
+.card{
+border-radius: 20px;
+}
