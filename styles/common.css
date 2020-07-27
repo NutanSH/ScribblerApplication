@@ -8,10 +8,7 @@ h4{
     font-family: 'Ubuntu Mono', monospace;
   }
 
-  input.btn btn-primary {
-    position: absolute;
-    right: 0;
-}
+  
 
   #popUpWindow{
 width: 100%;
@@ -25,3 +22,15 @@ input[type=text], input[type=password] {
   border: 1px solid #ccc;
   box-sizing: border-box;
 }
+
+#loginButtons{
+ float:right;
+}
+
+#signInButton{
+margin-right: 1%;
+}
+
+#signUpButton{
+  margin-right: 2%;
+  }

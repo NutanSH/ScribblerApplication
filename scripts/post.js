@@ -1,17 +1,18 @@
-var count = 0;
-function likeFunction() {
-    likeButton.innerHTML = 'Liked';
-    document.getElementById("likeText").innerHTML = count++ +' person likes this!';
+var count = 1;
+
+function likeFunction(likeButton) {
+  
+  document.getElementById(likeButton).innerHTML = 'Liked';
+  const updatedCount = count++;
+  document.getElementById('likeText').innerHTML = updatedCount +' person likes this!';
 }
 
-function showComments(){
-    var text = document.getElementById("textArea");
+function showComments(textArea){
+    var text = document.getElementById(textArea);
     var showarea = document.getElementById("commentText");
     showarea.innerHTML=text.value+'<br>'+showarea.innerHTML;
+    text.value = '';
    }
-
-
-
 
 
 

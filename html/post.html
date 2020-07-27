@@ -25,18 +25,20 @@
 
 <body>
 
-  <header>
+	<header>
+		<section>
 		<div>
 			<h1>ScriBBler</h1>
 
-			<div style="float:right" class="container">
+			<div class="container" id="loginButtons">
 
 				<div class="text-right">
-					<button type="button" class='btn btn-primary pull-right mt-2' data-toggle="modal"
+				<button type="button" class='btn btn-primary pull-right mt-2' data-toggle="modal"
 						data-target="#signUpWindow">Sign Up</button>
 
 					<button type="button" class="btn btn-primary pull-right mt-2" data-toggle="modal"
-						data-target="#signInWindow">Sign In</button>
+						data-target="#signInWindow">Sign In</button> 
+					
 				</div>
 			</div>
 		</div>
@@ -151,7 +153,7 @@
 		</div>
 
 		</div>
-
+<section>
 	</header>
  
         
@@ -172,7 +174,7 @@
 
 
 
-<div><button class="likeButton" id="likeButton" onclick="likeFunction()" type="submit"><i class="fa fa-thumbs-up" aria-hidden="true" ></i> Like</button></div>
+<div><button type="button" class="likeButton" id="likeButton" onclick="likeFunction('likeButton')"><i class="fa fa-thumbs-up" aria-hidden="true" ></i> Like</button></div>
 
 <p id="likeText">Be the first one to like this! </p>
 
@@ -182,7 +184,7 @@
   <textarea class="form-control" id="textArea" rows="2" placeholder="Leave a comment..."></textarea>
 </div>
 
-<div><button class="commentButton" id="commentButton" type="submit" onclick="showComments('textArea', '')">Comment</button></div>
+<div><button type="button" class="commentButton" id="commentButton" onclick="showComments('textArea', '')">Comment</button></div>
 <br><br>
 <div><p><h6>All Comments</h6></p></div>
 <p id="commentText"></p>
