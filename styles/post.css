@@ -43,3 +43,30 @@ color:white;
 .author{
     padding-top: 50px;
 }
+
+#postTitle:focus {
+    outline-color: rgb(228, 97, 169);
+}
+
+#postBody:focus {
+    outline-color: rgb(228, 97, 169);
+}
+
+.commonBorder{
+     margin-left: 20px;
+    margin-right: 20px;
+}
+
+.commonFont{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+
+#likeText{
+    color:grey;
+}
+
+#outline{
+outline-color: grey;
+outline-width: 5px;
+}
